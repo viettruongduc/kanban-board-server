@@ -1,5 +1,4 @@
 const express = require('express');
-const path = require('path');
 const app = express();
 const cors = require('cors');
 const PORT = 3000;
@@ -8,8 +7,6 @@ require('dotenv').config();
 const Task = require('./src/app/models/Task');
 
 app.use(cors());
-
-app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(express.urlencoded({ extended: true }));
 
