@@ -16,7 +16,7 @@ const TaskSchema = new Schema({
 });
 
 
-const taskDB = mongoose.createConnection('mongodb+srv://task-management:mBpbpR0oFvshoghP@task-management.yrlbnwg.mongodb.net/?retryWrites=true&w=majority').useDb('task-management')
-const Task = taskDB.model('Task', TaskSchema, 'task')
+const taskDB = mongoose.createConnection(process.env.ATLAS_URI).useDb(process.env.DB_NAME)
+const Task = taskDB.model('Task', TaskSchema, process.env.COLLECTION_NAME)
 
 module.exports = Task
