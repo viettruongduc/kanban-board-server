@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const cors = require('cors');
-const PORT = 4000;
+const PORT = 3000;
 require('dotenv').config();
 
 const Task = require('./src/app/models/Task');
