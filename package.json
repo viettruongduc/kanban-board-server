@@ -1,0 +1,27 @@
+{
+  "name": "kanban-server",
+  "homepage": "https://viettruongduc.github.io/kanban-board-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "gh-pages": "^5.0.0",
+    "harp": "^0.46.1",
+    "mongodb": "^5.2.0",
+    "mongoose": "^7.0.3",
+    "nodemon": "^2.0.19",
+    "path": "^0.12.7"
+  }
+}
