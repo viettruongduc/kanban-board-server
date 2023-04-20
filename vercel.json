@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "name": "music-album",
+  "name": "kanban-board-server",
   "builds": [
     {
-      "src": "server.js",
+      "src": "index.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/server.js"
+      "dest": "/index.js"
     }
   ]
 }
