@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "deploy": "vercel deploy --prod"
+    "deploy": "vercel deploy --prod",
+    "build": "yarn build"
   },
   "keywords": [],
   "author": "",
