@@ -1,4 +1,3 @@
-const serverless = require('serverless-http');
 const express = require('express');
 const path = require('path');
 const app = express();
@@ -58,5 +57,4 @@ app.patch("/", async (req, res) => {
 	}
 });
 
-module.exports.handler = serverless(app)
-
+module.exports = { app };
